@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Реєстраційна форма</title>
+</head>
+
+<body>
+    <form id="registration-form" style="border:1px solid #ccc">
+        <div class="container">
+            <h1>Реєстраційна форма</h1>
+            <hr>
+
+            <label for="full-name">ПІБ:</label>
+            <input type="text" placeholder="Введіть ПІБ тут" id="full-name" required><br>
+
+            <label for="birthday">Дата народження:</label>
+            <input type="date" id="birthday" max="2005-01-01" required><br>
+
+            <label for="photo">Персональне фото:</label>
+            <input type="file" id="photo" accept="image/*"><br>
+
+            <label for="gender">Стать:</label>
+            <select id="gender" required>
+                <option value="male">Чоловіча</option>
+                <option value="female">Жіноча</option>
+            </select><br>
+
+            <label for="country">Країна:</label>
+            <select id="country" required>
+                <option value="default">Оберіть країну</option>
+                <option value="ukraine">Україна</option>
+                <option value="poland">Польща</option>
+                <!-- Додайте інші країни за потребою -->
+            </select><br>
+
+            <label for="region">Область:</label>
+            <select id="region" required>
+                <!-- Фільтровані області будуть додані за допомогою JavaScript -->
+            </select><br>
+
+            <label for="city">Найближчий населений пункт:</label>
+            <select id="city" required>
+                <!-- Фільтровані населені пункти будуть додані за допомогою JavaScript -->
+            </select><br>
+
+            <label for="phone">Номер телефону:</label>
+            <input type="text" placeholder="+380 (XX)XXXXXXX" id="phone" required><br>
+
+            <label for="email">Пошта:</label>
+            <input type="email" placeholder="Введіть пошту" id="email" required><br>
+
+            <button type="submit" class="signupbtn">Зареєструвати</button>
+        </div>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

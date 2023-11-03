@@ -1,0 +1,65 @@
+@import url("reset.css");
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+#email {
+    margin-bottom: 30px;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #4c4eaf;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* Поплавок отмена и кнопки регистрации и добавить равную ширину */
+.signupbtn {
+    width: 50%;
+    background-color: rgb(47, 255, 130);
+    margin-bottom: 0 auto;
+}
+
+/* Очистить поплавки */
+.signupbtn::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Измените стили для кнопки отмены и кнопки регистрации на дополнительных маленьких экранах */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
