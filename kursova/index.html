@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<title>Donate ZSU</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</div>
+				<div class="header__body">
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">Донат</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Для ЗСУ</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Для волонтерів</a>
+							</li>
+						</ul>
+					</nav>
+					<button id="btn" class="header__button" type="button">Подати заявку</button>
+
+					<div id="myModal" class="modal">
+						<div class="modal-content">
+							<div class="modal-header">
+								<span class="close">&times;</span>
+								<h2 class="modal-header__title title title--dark">Заявка для зворотного контакту</h2>
+							</div>
+							<div class="modal-body">
+								<form id="feedbackForm" class="form" onsubmit="submitForm(event)">
+									<div class="form__item">
+										<label class="form__label" for="firstName">Ім'я:</label>
+										<input type="text" id="firstName" name="firstName" required class="form__input">
+									</div>
+
+									<div class="form__item">
+										<label class="form__label" for="lastName">Прізвище:</label>
+										<input type="text" id="lastName" name="lastName" required class="form__input">
+									</div>
+
+									<div class="form__item">
+										<label class="form__label">Хто ви:</label>
+
+										<input type="radio" id="volunteer" name="type" value="Волонтер" required
+											class="form__radio">
+										<label class="form__label-sub" for="volunteer">Волонтер</label>
+
+										<input type="radio" id="military" name="type" value="Військовий" required
+											class="form__radio">
+										<label class="form__label-sub" for="military">Військовий</label>
+
+										<input type="radio" id="civilian" name="type" value="Цивільний" required
+											class="form__radio">
+										<label class="form__label-sub" for="civilian">Цивільний</label>
+									</div>
+
+									<div class="form__item">
+										<label class="form__label" for="phone">Ваш телефон:</label>
+										<input type="tel" id="phone" name="phone" pattern="^^\+380\d{9}$" required
+											placeholder="+380XXXXXXXXX" class="form__input">
+									</div>
+
+									<div class="form__item">
+										<label class="form__label" for="email">Пошта:</label>
+										<input type="email" id="email" name="email" required
+											placeholder="example@mail.com" class="form__input">
+									</div>
+
+									<div class="form__item">
+										<label class="form__label">Як зв'язатись:</label>
+
+										<input type="checkbox" id="viber" name="contactMethod" value="Вайбер"
+											class="form__checkbox">
+										<label class="form__label-sub" for="viber">Вайбер</label>
+
+										<input type="checkbox" id="telegram" name="contactMethod" value="Телеграм"
+											class="form__checkbox">
+										<label class="form__label-sub" for="telegram">Телеграм</label>
+
+										<input type="checkbox" id="call" name="contactMethod" value="Зателефонувати"
+											class="form__checkbox">
+										<label class="form__label-sub" for="call">Зателефонувати</label>
+									</div>
+
+									<div class="form__item">
+										<label class="form__label" for="additionalInfo">Додаткова
+											інформація:</label>
+										<textarea id="additionalInfo" name="additionalInfo" rows="4"
+											class="form__textarea"></textarea>
+									</div>
+
+									<button type="submit" class="form__submit">Відправити</button>
+								</form>
+							</div>
+							<!-- <div class="modal-footer">
+								<h3>Футер модального окна</h3>
+							</div> -->
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main-section">
+				<div class="main-section__container">
+					<div class="main-section__content">
+						<div class="main-section__label">Слава Україні !</div>
+						<h1 class="main-section__title title">Допоможи нашим воїнам
+							нищити окупантів</h1>
+					</div>
+				</div>
+				<div class="main-section__image">
+					<img src="img/main/bg.jpg" alt="Bg">
+				</div>
+			</section>
+			<section class="page__materials materials">
+				<div class="materials__container">
+					<div class="materials__content">
+						<h2 class="materials__title title title--dark">FPV дрони</h2>
+						<div class="materials__text text">
+							<p>FPV дрони, або дрони виду від першої особи (First Person View), відіграють ключову роль в
+								сучасних бойових операціях та безпеці воїнів. Ці апарати є важливими інструментами для
+								виконання різних завдань, починаючи від слідкування за ворожими діями до знищення цілей.
+								Завдяки їхній надійності та ефективності, FPV дрони забезпечують безпеку військових та
+								віграють важливу роль у виконанні успішних бойових операцій.</p>
+						</div>
+						<!-- <a href="#" class="materials__more">Читати далі</a> -->
+					</div>
+					<div class="materials__slider slider-materials swiper">
+						<!-- Additional required wrapper -->
+						<div class="slider-materials__wrapper swiper-wrapper">
+							<!-- Slides -->
+							<div class="slider-materials__slide swiper-slide">
+								<img src="img/materials/01.jpg" alt="Image">
+							</div>
+							<div class="slider-materials__slide swiper-slide">
+								<img src="img/materials/02.jpg" alt="Image">
+							</div>
+							<div class="slider-materials__slide swiper-slide">
+								<img src="img/materials/03.jpg" alt="Image">
+							</div>
+						</div>
+						<!-- If we need pagination -->
+						<div class="slider-materials__pagination swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="page__goal goal">
+				<div class="goal__container">
+					<h2 class="goal__title title">Наша мета</h2>
+					<div class="goal__text text">
+						<p>Вкрай складний час для нашого народу, ми - українці, як ніхто інші, повинні об'єднатися та
+							забезпечити наших незламних воїнів усіма необхідними ресурсами для виконання їхніх важливих
+							завдань. Ми віримо в те, що кожен з нас має можливість зробити реальний</p>
+						<p>внесок у майбутнє нашої країни. Наша мета – направити донати від звичайних людей для
+							закупівлі високоякісної зброї, сучасного обладнання та інших засобів ведення війни, до наших
+							військових, які цього найбільше потребують.</p>
+					</div>
+				</div>
+			</section>
+			<div class="page__info info">
+				<div class="info__container">
+					<div class="info__image">
+						<img src="img/goal/img.jpg" alt="Image">
+					</div>
+					<div class="info__content">
+						<div class="info__title-container">
+							<h2 class="title title--dark">Чому варто допомагати?</h2>
+						</div>
+						<article class="info__item">
+							<h4 class="info__title">Єдність</h4>
+							<div class="info__text text">
+								<p>
+									Наші зусилля об'єднують громадськість, військових і волонтерів, сприяючи створенню
+									єдиного фронту в обороні нашої країни.
+								</p>
+							</div>
+						</article>
+						<article class="info__item">
+							<h4 class="info__title">Підтримка</h4>
+							<div class="info__text text">
+								<p>
+									Допомагаючи нашим військовим, ми вислов-люємо вдячність за їхню відвагу та
+									самопожертву.
+								</p>
+							</div>
+						</article>
+						<article class="info__item">
+							<h4 class="info__title">Оборона</h4>
+							<div class="info__text text">
+								<p>
+									Наші зусилля сприяють зміцненню обороно-здатності нашої країни.
+								</p>
+							</div>
+						</article>
+						<article class="info__item">
+							<h4 class="info__title">Наближення</h4>
+							<div class="info__text text">
+								<p>
+									Ми наближаємо нашу перемогу!
+								</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="mailto:ist21-a.yantsevych@nubip.edu.ua"
+					class="footer__mail">ist21-a.yantsevych@nubip.edu.ua</a>
+				<div class="footer__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</div>
+				<ul class="footer__menu menu-footer">
+					<li class="menu-footer__item">
+						<a href="#" class="menu-footer__link">Cookies</a>
+					</li>
+					<li class="menu-footer__item">
+						<a href="#" class="menu-footer__link">Privacy Policy</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
