@@ -76,9 +76,6 @@ document.getElementById('feedbackForm').addEventListener('submit', function (e) 
     })
         .then(response => {
             alert('Дякуємо! Ваша заявка успішно надіслана.');
-            // Закрийте модальне вікно за необхідності
-            // Наприклад, якщо ви використовуєте Bootstrap Modal:
-            // $('#myModal').modal('hide');
         })
         .catch(error => {
             alert('Сталася помилка при відправці форми. Спробуйте ще раз.');
