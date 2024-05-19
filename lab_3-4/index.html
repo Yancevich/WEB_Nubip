@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Головна</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__body">
+            <a href="#" class="header__link-logo">
+              <img
+                src="img/mountains-svgrepo-com.svg"
+                class="header__img-logo"
+                alt="logo"
+              />
+              <span class="header__text-logo"
+                >Travel <br /><small>Carpathian Mountains</small></span
+              >
+            </a>
+
+            <ul class="header__menu menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Блог </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Маршрути </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Форум </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Про нас </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Контакти </a>
+              </li>
+            </ul>
+            <div class="header__user user">
+              <a href="#" class="user__link">
+                <img class="user__img" src="img/account.svg" alt="account" />
+              </a>
+            </div>
+
+            <div class="header__burger burger">
+              <a href="#" class="burger__link">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <div class="page__hero hero">
+          <div class="hero__container">
+            <div class="hero__text-block">
+              <h1 class="hero__title">Розпочни свою подорож разом з нами!</h1>
+              <div class="hero__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Officiis, ratione! Sunt ipsum officiis deserunt. Commodi,
+                  dolor adipisci molestiae voluptas eveniet veritatis
+                  necessitatibus vel, aspernatur nisi libero magnam odit,
+                  officia quidem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page__category category">
+          <div class="category__container">
+            <h2 class="category__title section-title">Обери категорію</h2>
+            <ul class="category__list">
+              <li class="category__item category__item--prykarpattya">
+                <a href="#" class="category__link">Прикарпаття</a>
+              </li>
+              <li class="category__item category__item--carpathians">
+                <a href="#" class="category__link">Карпати</a>
+              </li>
+              <li class="category__item category__item--transcarpathia">
+                <a href="#" class="category__link">Закарпаття</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="page__routes routes">
+          <div class="routes__container">
+            <h2 class="routes__title section-title">Топові маршрути</h2>
+            <ul class="routes__list">
+              <li class="routes__item route">
+                <a href="#" class="route__link">
+                  <img
+                    src="img/hoverla.JPG"
+                    alt="hoverla-img"
+                    class="route__img"
+                  />
+                </a>
+                <div class="route__text-block">
+                  <h3 class="route__title">Говерла</h3>
+                  <div class="route__text">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      In, eius.
+                    </p>
+                  </div>
+                  <button class="route__btn" type="button">Переглянути</button>
+                </div>
+              </li>
+              <li class="routes__item route">
+                <a href="#" class="route__link">
+                  <img
+                    src="img/hoverla.JPG"
+                    alt="hoverla-img"
+                    class="route__img"
+                  />
+                </a>
+                <div class="route__text-block">
+                  <h3 class="route__title">Говерла</h3>
+                  <div class="route__text">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      In, eius.
+                    </p>
+                  </div>
+                  <button class="route__btn" type="button">Переглянути</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <ul class="footer__links links">
+            <li class="links__item">
+              <a href="#" class="links__link">Маршрути</a>
+            </li>
+            <li class="links__item">
+              <a href="#" class="links__link">Форум</a>
+            </li>
+            <li class="links__item">
+              <a href="#" class="links__link">Підртимка</a>
+            </li>
+          </ul>
+
+          <ul class="footer__socials socials">
+            <li class="socials__item">
+              <a href="#" class="socials__link">Instagram</a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">TikTok</a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Modal -->
+    <div id="auth-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="form-container" id="register-form">
+          <h2 class="label">Реєстрація</h2>
+          <input
+            type="text"
+            id="register-username"
+            placeholder="Логін"
+            required
+          />
+          <input
+            type="password"
+            id="register-password"
+            placeholder="Пароль"
+            required
+          />
+          <div class="btns">
+            <button id="register-btn">Реєстрація</button>
+            <button id="show-login-form">Уже маєте аккаунт?</button>
+          </div>
+        </div>
+        <div class="form-container" id="login-form">
+          <h2 class="label">Авторизація</h2>
+          <input type="text" id="login-username" placeholder="Логін" required />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Пароль"
+            required
+          />
+          <div class="btns">
+            <button id="login-btn">Авторизація</button>
+            <button id="show-register-form">Не маєте аккаунт?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
